@@ -1,0 +1,5 @@
+relevanceai
+pyyaml
+fastapi
+uvicorn
+relevanceai

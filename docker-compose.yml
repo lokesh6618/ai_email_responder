@@ -1,0 +1,15 @@
+version: '1'
+
+services:
+  test_env:
+    build: .
+    container_name: test_env
+    platform: linux/amd64
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    ports:
+      - "5566:8000"  # Map external port 5566 to container's internal port 8000
